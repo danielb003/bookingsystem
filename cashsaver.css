@@ -1,0 +1,1012 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+header, section, footer, aside, nav, article {
+	display: -webkit-box;
+}
+table {
+	border-collapse: collapse;
+}
+body {
+	text-align: center; /* for older browsers*/
+	width: 100%;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+}
+input[type="submit"] {
+	cursor: pointer;
+}
+#mainframe {
+	width: 100%;
+	height: 100%;
+}
+#header {
+	height: 80px;
+}
+#header_title {
+	height: 40px;
+	font-family: 'Josefin Slab', serif;
+	font-size: 40px;
+	font-weight: 600;
+	position: relative;
+	top: 15px;
+	left: 500px;
+	padding: 10px 10px;
+	padding-bottom: 0px;
+}
+#header_title_word2 {
+	color: rgb(62, 132, 33);
+}
+#header_title_copyright {
+	font-size: 14px;
+}
+#footer {
+	height: 35px;
+	width: 100%;
+	background-color: rgb(17, 17, 17);
+	box-shadow: 0px -7px 18px -5px rgba(0,0,0,0.66);
+	font-family: 'Nunito', sans-serif;
+	font-size: 14px;
+}
+#footer_p {
+	color: white;
+	margin-top: 8px;
+}
+/*-- main navigation --*/
+#nav_bar {
+	background-color: rgb(17, 17, 17);
+	box-shadow: 0px 10px 18px -5px rgba(0,0,0,0.66);
+}
+#nav_bar ul {
+	display: inline-flex;
+	position: relative;
+	left: 500px;
+	height: 40px;
+	width: 900px;
+	border-left: 1px solid rgb(49, 50, 51);
+}
+#nav_bar li {
+	font-size: 14px;
+	display: inline-flex;
+	padding: 10px 70px;
+	color: white;
+	border-right: 1px solid rgb(49, 50, 51);
+}
+#nav_bar li:hover {
+	background-color: green;
+	transition: background-color 150ms linear;
+}
+nav a:link {
+	text-decoration: none;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+}
+nav a:visited {
+	text-decoration: none;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+}
+/*-- login navigation --*/
+#login_nav_bar {
+	background-color: rgb(17, 17, 17);
+	box-shadow: 0px 10px 18px -5px rgba(0,0,0,0.66);
+}
+#login_nav_bar ul {
+	display: inline-flex;
+	position: relative;
+	left: 500px;
+	height: 40px;
+	width: 900px;
+}
+/*-- members navigation --*/
+#members_nav_bar {
+	background-color: rgb(17, 17, 17);
+	box-shadow: 0px 10px 18px -5px rgba(0,0,0,0.66);
+}
+#members_nav_bar ul {
+	display: inline-flex;
+	position: relative;
+	left: 500px;
+	height: 40px;
+	width: 900px;
+	border-left: 1px solid rgb(49, 50, 51);
+}
+#members_nav_bar li {
+	font-size: 14px;
+	display: inline-flex;
+	padding: 10px 72px;
+	color: white;
+	border-right: 1px solid rgb(49, 50, 51);
+}
+#members_nav_bar li:hover {
+	background-color: green;
+	transition: background-color 150ms linear;
+}
+/*-- register navigation --*/
+#register_nav_bar {
+	background-color: rgb(17, 17, 17);
+	box-shadow: 0px 10px 18px -5px rgba(0,0,0,0.66);
+}
+#register_nav_bar ul {
+	display: inline-flex;
+	position: relative;
+	left: 500px;
+	height: 40px;
+	width: 900px;
+}
+/*-- index.php --*/
+#top_index {
+	height: 600px;
+	overflow: hidden;
+}
+#top_index_content {
+	font-family: 'Nunito', sans-serif;
+	color: white;
+	position: relative;
+	top: 50px;
+	left: 500px;
+	width: 490px;
+	height: 500px;
+}
+#top_index_content p {
+	padding: 10px 10px;
+	text-align: justify;
+}
+#top_index_c1 {
+	font-size: 60px;
+}
+#top_index_c2 {
+	font-size: 20px;
+}
+#register_button {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	position: relative;
+	left: -320px;
+	width: 250px;
+	height: 40px;
+	background-color: rgb(17, 17, 17);
+	color: white;
+	border-radius: 5px;
+}
+#register_button:hover {
+	background-color: green;
+	transition: background-color 150ms linear;
+}
+#top_image {
+	position: relative;
+	top: -865px;
+	z-index: -1;
+}
+#top_index_footer {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	height: 93px;
+	width: 100%;
+}
+#top_index_footer_p1 {
+	position: relative;
+	font-size: 32px;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+#top_index_footer_p2 {
+	font-size: 18px;
+	color: rgb(62, 132, 33);
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#mid_index {
+	height: 500px;
+}
+#mid_index_title {
+	font-family: 'Nunito', sans-serif;
+	font-size: 40px;
+	font-weight: 650;
+	position: relative;
+	top: 50px;
+	left: 20px;
+}
+#calc_image {
+	position: relative;
+	top: 80px;
+	left: -120px;
+}
+#graph_image {
+	position: relative;
+	top: 80px;
+	left: 20px;
+}
+#arrow_image {
+	position: relative;
+	top: 80px;
+	left: 160px;
+}
+#mid_index_p1 {
+	position: relative;
+	top: 92px;
+	left: 560px;
+	font-family: 'Arimo', sans-serif;
+	font-size: 20px;
+	width: 200px;
+	padding: 5px 10px;
+}
+#mid_index_p2 {
+	position: relative;
+	top: -35px;
+	left: 860px;
+	font-family: 'Arimo', sans-serif;
+	font-size: 20px;
+	width: 200px;
+	padding: 5px 10px;
+}
+#mid_index_p3 {
+	position: relative;
+	top: -185px;
+	left: 1160px;
+	font-family: 'Arimo', sans-serif;
+	font-size: 20px;
+	width: 200px;
+	padding: 5px 10px;
+}
+/*-- login.php --*/
+#login_background {
+	background-color: rgba(21,21,21,0.9);
+	position: relative;
+	top: -30px;
+	height: 850px;
+}
+#login_content {
+	width: 400px;
+	height: 300px;
+	font-family: 'Nunito', sans-serif;
+	position: relative;
+	top: 50px;
+	left: 760px;
+	background-color: rgba(250, 250, 250, 0.8);
+	margin-top: 30px;
+	margin-bottom: 30px;
+	box-shadow: 5px 7px 5px 0px rgba(0,0,0,0.75);
+	border-radius: 4px;
+}
+#login_title {
+	font-family: 'Josefin Slab', serif;
+	font-weight: 600;
+	font-size: 40px;
+	padding-top: 30px;
+}
+#login_error {
+	position: relative;
+	left: 55px;
+	width: 287px;
+	margin-top: 5px;
+	margin-bottom: -43px;
+	color: red;
+	font-size: 14px;
+}
+#email_input {
+	border: 1px solid rgb(62, 132, 33);
+	font-size: 14px;
+	padding: 7px 5px;
+	position: relative;
+	top: 49px;
+	left: 2px;
+	width: 278px;
+	border-radius: 2px;
+}
+#password_input {
+	border: 1px solid rgb(62, 132, 33);
+	font-size: 14px;
+	padding: 7px 5px;
+	position: relative;
+	top: 58px;
+	left: 2px;
+	width: 278px;
+	border-radius: 2px;
+}
+#login_submit {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	padding: 8px 60px;
+	position: relative;
+	top: 70px;
+	width: 290px;
+	border-radius: 5px;
+	background-color: rgb(17, 17, 17);
+	color: white;
+}
+#login_submit:hover {
+	background-color: green;
+	transition: background-color 150ms linear;
+}
+/*-- members.php --*/
+#members_background {
+	background-color: rgba(21,21,21,0.9);
+	height: 850px;
+	z-index: -1;
+}
+#dashboard_title {
+	font-family: 'Roboto Slab', serif;
+	font-size: 36px;
+	position: relative;
+	top: 30px;
+	color: white;
+}
+#dashboard {
+	border: 1px solid rgb(124, 124, 124);
+	font-family: 'Roboto Slab', serif;
+	position: relative;
+	top: 50px;
+	left: 500px;
+	width: 896px;
+	height: 450px;
+}
+#dashboard_content {
+	position: relative;
+	top: 20px;
+	left: 20px;
+	width: 250px;
+	height: 180px;
+	color: white;
+}
+#dashboard_content_p1 {
+	font-size: 14px;
+	margin-top: 20px;
+}
+#dashboard_content_p2 {
+	font-size: 46px;
+	padding: 5px 0px;
+}
+#dashboard_content_p3 {
+	font-size: 14px;
+}
+#dashboard_content_seperator {
+	position: relative;
+	top: 30px;
+	width: 250px;
+	border-top: 1px solid rgb(124,124,124);
+}
+#dashboard_graph {
+	border: 1px solid rgb(124,124,124);
+	position: relative;
+	top: 18px;
+	left: 20px;
+	width: 250px;
+	height: 210px;
+}
+#dashboard_overview {
+	border: 1px solid rgb(204, 204, 204);
+	position: relative;
+	top: -392px;
+	left: 290px;
+	width: 585px;
+	height: 300px;
+	background-color: rgb(216, 216, 216);
+	box-shadow: 7px 7px 15px 1px rgba(0,0,0,0.75);
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	color: black;
+}
+#dashboard_overview_header_row {
+	border-bottom: 1px solid rgb(156, 156, 156);
+	box-shadow: 0px 3px 2px -1px rgba(0,0,0,0.75);
+	height: 25px;
+}
+#dashboard_overview_table th {
+	background-color: white;
+}
+.transaction_row_pos {
+	border-bottom: 1px solid rgb(156, 156, 156);
+	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+	height: 20px;
+	background-color: rgba(37, 178, 51, 0.5);
+}
+.transaction_row_neg {
+	border-bottom: 1px solid rgb(156, 156, 156);
+	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+	height: 20px;
+	background-color: rgba(226, 29, 29, 0.5);
+}
+#table_date {
+	width: 120px;
+}
+#table_desc {
+	width: 345px;
+	border-left: 1px solid rgb(156,156,156);
+	border-right: 1px solid rgb(156,156,156);
+}
+#table_amt {
+	width: 120px;
+}
+#dashboard_summary {
+	position: relative;
+	top: -376px;
+	left: 290px;
+	width: 585px;
+	height: 90px;
+}
+#dashboard_summary_title {
+	position: relative;
+	left: 10px;
+	top: 30px;
+	font-size: 30px;
+	width: 350px;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+}
+#dashboard_summary_total {
+	font-size: 32px;
+	width: 120px;
+	position: relative;
+	top: -10px;
+	left: 440px;
+	color: green;
+}
+/*-- register.php --*/
+#register_background {
+	background-color: rgba(21,21,21,0.9);
+	height: 860px;
+}
+#register_content {
+	background-color: rgba(250, 250, 250, 0.8);
+	box-shadow: 5px 7px 5px 0px rgba(0,0,0,0.75);
+	position: relative;
+	left: 600px;
+	top: 40px;
+	height: 780px;
+	width: 600px;
+}
+#register_title {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 30px;
+	position: relative;
+	top: 20px;
+}
+.register_label {
+	font-family: 'Nunito', sans-serif;
+	font-size: 16px;
+	display: block;
+	margin-bottom: -25px;
+	position: relative;
+	left: 70px;
+	top: 50px;
+	text-align: left;
+	width: 200px;
+}
+.register_input {
+	border: 1px solid rgb(62, 132, 33);
+	border-radius: 2px;
+	font-family: 'Nunito', sans-serif;
+	font-size: 14px;
+	display: block;
+	position: relative;
+	left: 300px;
+	top: 46px;
+	text-align: left;
+	width: 200px;
+	padding: 5px 9px;
+}
+#register_submit {
+	border-radius: 2px;
+	font-family: 'Nunito', sans-serif;
+	position: relative;
+	left: 110px;
+	top: 75px;
+	width: 222px;
+	height: 35px;
+	background-color: rgb(17, 17, 17);
+	color: white;
+}
+#register_submit:hover {
+	background-color: green;
+	transition: background-color 150ms linear;
+}
+/*-- members_account.php --*/
+#account_title {
+	font-family: 'Roboto Slab', serif;
+	font-size: 36px;
+	position: relative;
+	top: 30px;
+	color: white;
+}
+#account_content {
+	border: 1px solid rgb(124, 124, 124);
+	font-family: 'Poppins', sans-serif;
+	position: relative;
+	top: 50px;
+	left: 500px;
+	width: 896px;
+	height: 404px;
+	color: white;
+}
+#account_content_title {
+ 	font-size: 20px;
+ 	width: 95.5%;
+ 	text-align: left;
+ 	padding: 7px 20px;
+ 	border-bottom: 1px solid rgb(124,124,124);
+}
+#account_edit_icon {
+	position: absolute;
+	left: 860px;
+	top: 10px;
+}
+.account_content_p {
+	position: relative;
+	top: 10px;
+	text-align: left;
+	padding: 2px 20px;
+	font-size: 15px;
+}
+#account_personal {
+	border-bottom: 1px solid rgb(124,124,124);
+}
+#account_form {
+	position: relative;
+	top: -19px;
+	left: -100px;
+	height: 27px;
+}
+.old_and_new_password {
+	position: relative;
+	left: 20px;
+	margin-right: 5px;
+	padding: 1px 1px;
+}
+#confirm_new_password {
+	position: relative;
+	left: 290px;
+	top: -26px;
+	padding: 1px 1px;
+}
+#new_pass_submit {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	position: relative;
+	left: 400px;
+	top: -52px;
+	height: 23px;
+	width: 30px;
+	border-radius: 2px;
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(217,217,217,1) 100%); 
+	border: 1px solid green;
+	color: green;
+}
+#new_pass_submit:hover {
+	background: linear-gradient(to bottom, rgba(24,110,26,1) 0%, rgba(24,110,26,1) 0%, rgba(0,217,69,1) 70%);
+	color: white;
+	border: 1px solid white;
+	transition: background 150ms linear;
+}
+#bank_account_details {
+	height: 155px;
+}
+#bank_edit_icon {
+	position: absolute;
+	left: 860px;
+	top: 256px;
+}
+#bank_details_title {
+	font-size: 20px;
+ 	width: 95.5%;
+ 	text-align: left;
+ 	padding: 7px 20px;
+ 	border-bottom: 1px solid rgb(124,124,124);
+}
+.bank_details_p {
+	position: relative;
+	top: 10px;
+	text-align: left;
+	padding: 2px 20px;
+	font-size: 15px;
+}
+/*-- personal_details_edit.php --*/
+#edit_pd_title {
+	font-family: 'Roboto Slab', serif;
+	font-size: 36px;
+	position: relative;
+	top: 30px;
+	color: white;
+}
+#edit_pd_content {
+	border: 1px solid rgb(124, 124, 124);
+	font-family: 'Nunito', sans-serif;
+	position: relative;
+	top: 50px;
+	left: 500px;
+	width: 896px;
+	height: 395px;
+	color: white;
+}
+#edit_pd_intro {
+	font-family: 'Poppins', sans-serif;
+	font-size: 10px;
+	margin-top: 10px;
+}
+.edit_pd_label {
+	text-align: left;
+	padding-left: 5px;
+	display: block;
+	width: 170px;
+	position: relative;
+	left: 20px;
+	top: 15px;
+}
+.edit_pd_input {
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+	display: block;
+	width: 200px;
+	position: relative;
+	left: 240px;
+	top: -8px;
+	padding: 0px 4px;
+}
+#edit_pd_submit {
+	font-family: 'Poppins', sans-serif;
+	border-radius: 2px;
+	position: relative;
+	left: 365px;
+	top: -31px;
+	width: 120px;
+	height: 25px;
+	background-color: rgb(17, 17, 17);
+	color: white;
+	border: 1px solid rgb(124, 124, 124);
+}
+#edit_pd_submit:hover {
+	background-color: green;
+	transition: background-color 150ms linear;
+}
+/*-- bank_account_edit.php --*/
+#edit_ba_title {
+	font-family: 'Roboto Slab', serif;
+	font-size: 36px;
+	position: relative;
+	top: 30px;
+	color: white;
+}
+#edit_ba_content {
+	border: 1px solid rgb(124, 124, 124);
+	font-family: 'Nunito', sans-serif;
+	position: relative;
+	top: 50px;
+	left: 500px;
+	width: 896px;
+	height: 170px;
+	color: white;
+}
+#edit_ba_intro {
+	font-family: 'Poppins', sans-serif;
+	font-size: 10px;
+	margin-top: 10px;
+}
+.edit_ba_label {
+	text-align: left;
+	padding-left: 5px;
+	display: block;
+	width: 170px;
+	position: relative;
+	left: 20px;
+	top: 15px;
+}
+.edit_ba_input {
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+	display: block;
+	width: 200px;
+	position: relative;
+	left: 240px;
+	top: -8px;
+	padding: 0px 4px;
+}
+#edit_ba_submit {
+	font-family: 'Poppins', sans-serif;
+	border-radius: 2px;
+	position: relative;
+	left: 375px;
+	top: -32px;
+	width: 120px;
+	height: 25px;
+	background-color: rgb(17, 17, 17);
+	color: white;
+	border: 1px solid rgb(124, 124, 124);
+}
+#edit_ba_submit:hover {
+	background-color: green;
+	transition: background-color 150ms linear;
+}
+/*-- members_account.php --*/
+#calculator_title {
+	font-family: 'Roboto Slab', serif;
+	font-size: 36px;
+	position: relative;
+	top: 30px;
+	color: white;
+}
+#calculator_content {
+	border: 1px solid rgb(124, 124, 124);
+	font-family: 'Poppins', sans-serif;
+	position: relative;
+	top: 50px;
+	left: 500px;
+	width: 896px;
+	height: 480px;
+	color: white;
+}
+#calculator_content_p1 {
+	padding: 5px 10px;
+	height: 28px;
+	width: 240px;
+	margin-top: 10px;
+}
+#calculator_content_p2 {
+	position: relative;
+	top: -40px;
+	left: 774px;
+	padding: 5px 10px;
+	height: 28px;
+	width: 100px;
+}
+#calculator_seperator {
+	border-bottom: 1px solid rgb(124, 124, 124);
+	width: 876px;
+	position: relative;
+	left: 10px;
+	top: -32px;
+}
+#expenses_title {
+	position: relative;
+	top: -25px;
+}
+#expenses_div {
+	border: 1px solid rgb(204, 204, 204);
+	position: relative;
+	left: 160px;
+	top: -15px;
+	width: 585px;
+	height: 150px;
+	background-color: rgb(216, 216, 216);
+	box-shadow: 7px 7px 15px 1px rgba(0,0,0,0.75);
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	color: black;
+}
+#expenses_table th {
+	background-color: white;
+}
+#expenses_header_row {
+	border-bottom: 1px solid rgb(156, 156, 156);
+	box-shadow: 0px 3px 2px -1px rgba(0,0,0,0.75);
+	height: 25px;
+}
+#expenses_type {
+	width: 120px;
+}
+#expenses_desc {
+	width: 345px;
+	border-left: 1px solid rgb(156,156,156);
+	border-right: 1px solid rgb(156,156,156);
+}
+#expenses_amt {
+	width: 120px;
+}
+#expenses_add_type {
+	position: relative;
+	left: 8px;
+	width: 130px;
+}
+#expenses_add_desc {
+	position: relative;
+	left: 7px;
+	width: 200px;
+}
+#expenses_add_amt {
+	position: relative;
+	left: 6px;
+	width: 185px;
+}
+#expenses_add {
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	position: relative;
+	left: 4px;
+	top: -1px;
+	height: 22px;
+	width: 35px;
+	border-radius: 2px;
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(217,217,217,1) 100%); 
+	border: 1px solid green;
+	color: green;
+}
+#expenses_add:hover {
+	background: linear-gradient(to bottom, rgba(24,110,26,1) 0%, rgba(24,110,26,1) 0%, rgba(0,217,69,1) 70%);
+	color: white;
+	border: 1px solid white;
+	transition: background 150ms linear;
+}
+.add_input {
+	font-family: 'Poppins', sans-serif;
+	font-size: 11px;
+	font-weight: 600;
+	margin-right: 5px;
+	padding: 1px 1px;
+}
+#calculator_content_p3 {
+	position: relative;
+	top: 5px;
+	padding: 5px 10px;
+	height: 28px;
+	width: 226px;
+	margin-top: 10px;
+}
+#calculator_content_p4 {
+	position: relative;
+	top: -35px;
+	left: 774px;
+	padding: 5px 10px;
+	height: 28px;
+	width: 100px;
+}
+#calculator_seperator_2 {
+	border-bottom: 1px solid rgb(124, 124, 124);
+	width: 876px;
+	position: relative;
+	left: 10px;
+	top: -27px;
+}
+.expense_row {
+	border-bottom: 1px solid rgb(156, 156, 156);
+	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+	height: 20px;
+	background-color: rgba(226, 29, 29, 0.5);
+}
+#expense_remove {
+	position: relative;
+	top: 7px;
+	left: -124px;
+	width: 250px;
+}
+#expense_delete {
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	position: relative;
+	left: 136px;
+	top: 6px;
+	height: 22px;
+	width: 70px;
+	border-radius: 2px;
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(217,217,217,1) 100%); 
+	border: 1px solid red;
+	color: red;
+}
+#expense_delete:hover {
+	background: linear-gradient(to bottom, rgba(24,110,26,1) 0%, rgba(120,0,0,1) 0%, rgba(255,0,0,1) 70%);
+	color: white;
+	border: 1px solid white;
+	transition: background 150ms linear;
+}
+#savings_title {
+	position: relative;
+	top: -21px;
+	left: 0px;
+	width: 150px;
+	height: 28px;
+	padding: 5px 10px;
+}
+#savings_amount {
+	position: relative;
+	top: -85px;
+	left: 769px;
+	width: 100px;
+	height: 28px;
+	padding: 5px 10px;
+}
+#calculator_seperator_3 {
+	border-bottom: 1px solid rgb(124, 124, 124);
+	width: 876px;
+	position: relative;
+	left: 10px;
+	top: -80px;
+}
+#total_title {
+	position: relative;
+	top: -73px;
+	height: 28px;
+	padding: 5px 20px;
+	width: 200px;
+}
+#savings_change {
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	position: relative;
+	top: -56px;
+	left: 265px;
+	height: 22px;
+	width: 72px;
+	border-radius: 2px;
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(217,217,217,1) 100%); 
+	border: 1px solid blue;
+	color: blue;
+}
+#savings_change:hover {
+	background: linear-gradient(to bottom, rgba(24,110,26,1) 0%, rgba(0,0,120,1) 0%, rgba(0,0,255,1) 70%);
+	color: white;
+	border: 1px solid white;
+	transition: background 150ms linear;
+}
+#calculator_total_pos {
+	position: relative;
+	left: 774px;
+	top: -111px;
+	height: 28px;
+	width: 100px;
+	padding: 5px 10px;
+	color: green;
+}
+#calculator_total_neg {
+	position: relative;
+	left: 774px;
+	top: -111px;
+	height: 28px;
+	width: 100px;
+	padding: 5px 10px;
+	color: red;
+}
+/*-- fixed_savings_edit --*/
+#edit_fs_title {
+	font-family: 'Roboto Slab', serif;
+	font-size: 36px;
+	position: relative;
+	top: 30px;
+	color: white;
+}
+#edit_fs_content {
+	border: 1px solid rgb(124, 124, 124);
+	font-family: 'Nunito', sans-serif;
+	position: relative;
+	top: 50px;
+	left: 500px;
+	width: 896px;
+	height: 90px;
+	color: white;
+}
+#edit_fs_intro {
+	font-family: 'Poppins', sans-serif;
+	font-size: 10px;
+	margin-top: 10px;
+}
+#edit_fs_label {
+	position: relative;
+	top: 25px;
+	left: -190px;
+}
+#edit_fs_input {
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+	position: relative;
+	top: 25px;
+	left: -170px;
+	padding: 0px 4px;
+}
+#edit_fs_submit {
+	font-family: 'Poppins', sans-serif;
+	position: relative;
+	top: 25px;
+	left: 190px;
+	border-radius: 2px;
+	width: 120px;
+	height: 25px;
+	background-color: rgb(17, 17, 17);
+	color: white;
+	border: 1px solid rgb(124, 124, 124);
+}
+#edit_fs_submit:hover {
+	background-color: green;
+	transition: background-color 150ms linear;
+}
