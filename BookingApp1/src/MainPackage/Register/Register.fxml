@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPackage.Register.RegisterController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="507.0" layoutX="192.0" layoutY="124.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: none;" width="643.0" />
+      <TextField id="newuserid" fx:id="newuserid" layoutX="242.0" layoutY="237.0" prefHeight="31.0" prefWidth="226.0" promptText="User ID">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+       <TextField id="newusername" fx:id="newusername" layoutX="242.0" layoutY="322.0" prefHeight="31.0" prefWidth="226.0" promptText="Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <PasswordField id="newuserpassword" fx:id="newuserpassword" layoutX="244.0" layoutY="409.0" prefHeight="31.0" prefWidth="226.0" promptText="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+       <TextField id="newusermobno" fx:id="newusermobno" layoutX="550.0" layoutY="236.0" prefHeight="31.0" prefWidth="226.0" promptText="Contact Number">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="550.0" layoutY="293.0" text="Please enter your Address :" />
+      <Button id="submit" fx:id="Submit" layoutX="404.0" layoutY="505.0" mnemonicParsing="false" onAction="#onSubmit" prefHeight="31.0" prefWidth="218.0" style="-fx-background-color: gray; -fx-text-fill: white;" text="Submit">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Pane prefHeight="96.0" prefWidth="1000.0" style="-fx-background-color: #212F3D;">
+         <children>
+			<ImageView fitHeight="70.0" fitWidth="72.0" layoutX="18.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/imageedit_1_5805622596.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="93.0" layoutY="30.0" text="John's Electrician Booking System" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="462.0" layoutY="134.0" text="Register" underline="true">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="242.0" layoutY="204.0" text="Please enter new user ID :" />
+      <Label layoutX="242.0" layoutY="377.0" text="Please enter your Password :" />
+      <Label layoutX="240.0" layoutY="290.0" text="Please enter your Name :" />
+      <Label layoutX="550.0" layoutY="203.0" text="Please enter your Contact Number :" />
+      <Label id="invaliduserid" fx:id="invaliduserid" layoutX="244.0" layoutY="268.0" text="Error : Invalid User ID. (3 digits)" textFill="RED" visible="false">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label id="invalidusername" fx:id="invalidusername" layoutX="244.0" layoutY="353.0" text="Error : Invalid User Name." textFill="RED" visible="false">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label id="invaliduserpassword" fx:id="invaliduserpassword" layoutX="244.0" layoutY="439.0" text="Error : Invalid User Password. (8-20 characters)" textFill="RED" visible="false">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label id="invalidusermobno" fx:id="invalidusermobno" layoutX="551.0" layoutY="268.0" text="Error : Invalid Contact Number. (10 digits)" textFill="RED" visible="false">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label id="invaliduseraddress" fx:id="invaliduseraddress" layoutX="551.0" layoutY="352.0" text="Error : Invalid Address." textFill="RED" visible="false">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label id="success" fx:id="Success" layoutX="430.0" layoutY="568.0" text="Registration Success!" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="iddatabase" layoutX="244.0" layoutY="268.0" text="Error : User ID already exists." textFill="RED" visible="false">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="551.0" layoutY="377.0" text="Please choose a company :" />
+      <ComboBox fx:id="newusercompanychoice" layoutX="551.0" layoutY="410.0" prefHeight="27.0" prefWidth="226.0" />
+      <TextField fx:id="newuseraddress" layoutX="551.0" layoutY="322.0" prefHeight="31.0" prefWidth="226.0" promptText="Address">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="invalidusercompany" layoutX="552.0" layoutY="437.0" text="Error : Invalid Company." textFill="RED" visible="false">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="486.0" layoutY="567.0" onMouseClicked="#onGoBack" text="Go Back" underline="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

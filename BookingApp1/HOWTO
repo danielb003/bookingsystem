@@ -1,0 +1,28 @@
+Option 1:
+Start off by launching your Eclipse IDE.
+Then, open your Git repositories by clicking Window -> Show View -> Other -> Git -> Git Repositories.
+Click on "Clone a git Repository".
+Then switch screen to the submission folder, under "Additional Resources (Links)".
+Make sure its "rmit-s3604433-sam-cullin/HotelSystem" Master branch.
+Clone the https provided in the green button.
+Paste the link in Eclipse "Clone a git Repo" dialog box, enter all your credential, import master branch, Click "done".
+Then head to your package explorer, and delete the existing project, BUT remember to copy the link before deleting it.
+DO NOT TICK delete project content on disk.
+After you delete the project, right click on package explorer, New -> Java Project.
+Type in a project name, untick the "use default location"  and paste in the copied link BUT just backspace the last Booking System, and click "Done".
+Instead its "C:\Users\git\BookingSystem\BookingSystem", change to "C:\Users\git\BookingSystem".
+Then, download the external Database.Jar file contained in the submission folder.
+Once downloaded, head to the package explorer project, right click on the file.
+Choose "Build Path" -> "Add External Archives" -> and find the downloaded sqlite-jdbc-3.16.1.jar file, and Done.
+Click on the "Green run icon" to execute the program and you're good to go.
+
+Option 2:
+Start off by launching your Eclipse IDE.
+Go File -> Import -> General -> Projects from Folder/Archive -> find the compiled source code in the submission folder.
+Click "Finish".
+Then, download the external sqlite-jdbc-3.16.1.jar file contained in the submission folder.
+Once downloaded, head to the package explorer project, right click on the file.
+Choose "Build Path" -> "Configure Build Path" -> Libraries -> Click on the existing sqlite.jar -> Click on remove 
+-> Click on add External JARS... -> add the existing sqlite-jdbc-3.16.1.jar file that came with the BookingSystem.zip 
+-> Click "Apply" -> Click "OK" and Done.
+Click on the "Green run icon" to execute the program and you're good to go.

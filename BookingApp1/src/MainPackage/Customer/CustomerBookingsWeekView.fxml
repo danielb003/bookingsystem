@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" type="BorderPane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <bottom>
+      <Region prefHeight="48.0" prefWidth="700.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <right>
+      <Region prefHeight="418.0" prefWidth="59.0" />
+   </right>
+   <left>
+      <Region prefHeight="418.0" prefWidth="52.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightGray; -fx-border-color: black;" GridPane.columnIndex="3">
+               <children>
+                  <Label graphicTextGap="0.0" layoutX="7.0" layoutY="17.0" text="Wednesday" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightGray; -fx-border-color: black;" GridPane.columnIndex="4">
+               <children>
+                  <Label graphicTextGap="0.0" layoutX="14.0" layoutY="17.0" text="Thursday" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightGray; -fx-border-color: black;" GridPane.columnIndex="5">
+               <children>
+                  <Label graphicTextGap="0.0" layoutX="22.0" layoutY="17.0" text="Friday" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightGray; -fx-border-color: black;" GridPane.columnIndex="6">
+               <children>
+                  <Label graphicTextGap="0.0" layoutX="16.0" layoutY="17.0" text="Saturday" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightGray; -fx-border-color: black;" GridPane.columnIndex="2">
+               <children>
+                  <Label graphicTextGap="0.0" layoutX="16.0" layoutY="17.0" text="Tuesday" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightGray; -fx-border-color: black;" GridPane.columnIndex="1">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="16.0" layoutY="17.0" text="Monday" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgray; -fx-border-color: black;" GridPane.rowIndex="1">
+               <children>
+                  <Label layoutX="9.0" layoutY="38.0" text="8am-10am" />
+               </children>
+            </Pane>
+            <Pane fx:id="oneMonday" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Pane fx:id="oneTuesday" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Pane fx:id="oneWednesday" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Pane fx:id="oneThursday" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Pane fx:id="oneFriday" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Pane fx:id="oneSaterday" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <Pane fx:id="twoMonday" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Pane fx:id="twoTuesday" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Pane fx:id="twoWednesday" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Pane fx:id="twoThursday" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Pane fx:id="twoFriday" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Pane fx:id="twoSaterday" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Pane fx:id="threeMonday" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgray; -fx-border-color: black;" GridPane.rowIndex="3">
+               <children>
+                  <Label layoutX="12.0" layoutY="38.0" text="1pm-3pm" />
+               </children>
+            </Pane>
+            <Pane fx:id="threeTuesday" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Pane fx:id="threeWednesday" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Pane fx:id="threeThursday" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Pane fx:id="threeFriday" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Pane fx:id="threeSaterday" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgray; -fx-border-color: black;" GridPane.rowIndex="4">
+               <children>
+                  <Label layoutX="12.0" layoutY="38.0" text="3pm-5pm" />
+               </children>
+            </Pane>
+            <Pane fx:id="fourMonday" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Pane fx:id="fourWednesday" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Pane fx:id="fourTuesday" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Pane fx:id="fourThursday" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Pane fx:id="fourFriday" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Pane fx:id="fourSaterday" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgray; -fx-border-color: black;" GridPane.rowIndex="2">
+               <children>
+                  <Label layoutX="6.0" layoutY="38.0" text="10am-12am" />
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="127.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="76.0" layoutY="51.0" text="Week Summary">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+</fx:root>

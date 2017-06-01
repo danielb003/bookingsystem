@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPackage.Owner.SettingsController">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="33.0" layoutY="25.0" text="Business Name" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="81.0" text="Existing Business Name :" />
+            <Label layoutX="33.0" layoutY="130.0" text="New Business Name :" />
+            <TextField fx:id="newbusinessname" layoutX="202.0" layoutY="126.0" />
+            <Label layoutX="33.0" layoutY="182.0" text="Business Logo" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="currentName" layoutX="205.0" layoutY="81.0" prefHeight="17.0" prefWidth="143.0" text="test" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="34.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true" />
+            <Button layoutX="387.0" layoutY="77.0" mnemonicParsing="false" onAction="#onUpdateBusinessName" prefHeight="76.0" prefWidth="66.0" text="Submit">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Pane layoutX="33.0" layoutY="227.0" onMouseClicked="#onUploadImage" prefHeight="259.0" prefWidth="317.0" style="-fx-background-color: E1E5E5;">
+               <children>
+                  <ImageView fx:id="uploadimage" fitHeight="99.0" fitWidth="110.0" layoutX="104.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="uploadlabel" layoutX="70.0" layoutY="119.0" onMouseClicked="#onUploadImage" text="Click here to upload image.">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button layoutX="387.0" layoutY="319.0" mnemonicParsing="false" onAction="#setImage" prefHeight="76.0" prefWidth="66.0" text="Submit">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="invalidbname2" layoutX="202.0" layoutY="151.0" text="Error : Invalid." textFill="RED" visible="false" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

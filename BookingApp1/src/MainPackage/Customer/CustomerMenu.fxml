@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="650.0" prefWidth="1000.0" style="-fx-background-color: #F0F3F4;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPackage.Customer.CustomerMenuController">
+	<top>
+		<Pane prefHeight="80.0" prefWidth="750.0" style="-fx-background-color: #212F3D;" BorderPane.alignment="CENTER">
+			<children>
+				<ImageView fitHeight="55.0" fitWidth="57.0" layoutX="21.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../Images/imageedit_1_5805622596.png" />
+					</image>
+				</ImageView>
+				<Label layoutX="78.0" layoutY="26.0" style="-fx-text-fill: white;" text="John's Electrician">
+					<font>
+						<Font name="HP Simplified Light" size="24.0" />
+					</font>
+				</Label>
+			</children>
+		</Pane>
+	</top>
+	<left>
+		<Pane prefHeight="570.0" prefWidth="289.0" style="-fx-background-color: #2E4053;" BorderPane.alignment="CENTER">
+			<children>
+				<ImageView fitHeight="32.0" fitWidth="32.0" layoutX="35.0" layoutY="26.0" onMouseClicked="#goCustCreateBookingDetails" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../Images/notebook.png" />
+					</image>
+				</ImageView>
+				<Label layoutX="88.0" layoutY="30.0" onMouseClicked="#goCustCreateBookingDetails" style="-fx-text-fill: white;" text="Create Booking">
+					<font>
+						<Font size="16.0" />
+					</font>
+				</Label>
+				<ImageView fitHeight="32.0" fitWidth="32.0" layoutX="35.0" layoutY="87.0" onMouseClicked="#goBookingHistory" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../Images/clock.png" />
+					</image>
+				</ImageView>
+				<Label layoutX="88.0" layoutY="90.0" onMouseClicked="#goBookingHistory" style="-fx-text-fill: white;" text="View Available Time/Date">
+					<font>
+						<Font size="16.0" />
+					</font>
+				</Label>
+				<ImageView fitHeight="32.0" fitWidth="32.0" layoutX="35.0" layoutY="509.0" onMouseClicked="#goLogout" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../Images/logout.png" />
+					</image>
+				</ImageView>
+				<Label layoutX="88.0" layoutY="513.0" onMouseClicked="#goLogout" style="-fx-text-fill: white;" text="Logout">
+					<font>
+						<Font size="16.0" />
+					</font>
+				</Label>
+			</children>
+		</Pane>
+	</left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

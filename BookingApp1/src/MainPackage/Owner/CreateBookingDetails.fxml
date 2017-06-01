@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPackage.Owner.CreateBookingDetailsController">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="33.0" layoutY="24.0" text="Date" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="74.0" text="Please choose a date :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="date" layoutX="242.0" layoutY="72.0" onAction="#launchTime" prefHeight="25.0" prefWidth="180.0" />
+            <Label layoutX="33.0" layoutY="124.0" text="Service" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="174.0" text="Please choose a service :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="service" layoutX="242.0" layoutY="172.0" prefHeight="25.0" prefWidth="180.0" />
+            <Label layoutX="33.0" layoutY="324.0" text="Employee" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="374.0" text="Please choose an employee :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="employee" layoutX="242.0" layoutY="372.0" onMouseClicked="#launchEmployee" prefHeight="25.0" prefWidth="180.0" />
+            <Label layoutX="33.0" layoutY="224.0" text="Time" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="274.0" text="Please choose a time slot :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="time" layoutX="242.0" layoutY="272.0" onAction="#launchEmployee" onMouseClicked="#launchTime" prefHeight="25.0" prefWidth="180.0" />
+            <Button layoutX="595.0" layoutY="502.0" mnemonicParsing="false" onAction="#onSubmit" prefHeight="45.0" prefWidth="80.0" text="Submit">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <Label fx:id="invalidservice" layoutX="450.0" layoutY="176.0" text="Error : Invalid Service." textFill="RED" visible="false" />
+            <Label fx:id="invalidtime" layoutX="450.0" layoutY="276.0" text="Error : Invalid Time." textFill="RED" visible="false" />
+            <Label fx:id="invalidemployee" layoutX="450.0" layoutY="376.0" text="Error : Invalid Employee." textFill="RED" visible="false" />
+            <Label fx:id="invaliddate" layoutX="450.0" layoutY="76.0" text="Error : Invalid Date." textFill="RED" visible="false" />
+            <Label fx:id="success" layoutX="216.0" layoutY="481.0" text="Successfully Added New Booking!" visible="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></Pane>
+   </center>
+</BorderPane>

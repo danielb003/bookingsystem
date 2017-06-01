@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPackage.SuperUser.AddOwnerController">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="38.0" layoutY="22.0" text="Owner Information" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="76.0" text="Business Name :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="276.0" text="Owner Contact Number :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="326.0" text="Owner Address :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="businessname" layoutX="226.0" layoutY="74.0" prefHeight="25.0" prefWidth="175.0" />
+            <TextField fx:id="ownerid" layoutX="226.0" layoutY="124.0" prefHeight="25.0" prefWidth="175.0" />
+            <TextField fx:id="ownername" layoutX="226.0" layoutY="174.0" prefHeight="25.0" prefWidth="175.0" />
+            <TextField fx:id="ownerpassword" layoutX="226.0" layoutY="224.0" prefHeight="25.0" prefWidth="175.0" />
+            <TextField fx:id="ownernumber" layoutX="226.0" layoutY="274.0" prefHeight="25.0" prefWidth="175.0" />
+            <TextArea fx:id="owneraddress" layoutX="226.0" layoutY="324.0" prefHeight="104.0" prefWidth="175.0" />
+            <Button fx:id="submit" layoutX="582.0" layoutY="505.0" mnemonicParsing="false" onAction="#onSubmitOwner" prefHeight="39.0" prefWidth="91.0" text="Submit">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="invalidbusinessname" layoutX="226.0" layoutY="99.0" text="Error : Invalid Business Name." textFill="RED" visible="false">
+               <font>
+                  <Font size="11.0" />
+               </font></Label>
+            <Label fx:id="invalidownernumber" layoutX="227.0" layoutY="299.0" text="Error : Invalid Contact Number. (10 digits)" textFill="RED" visible="false">
+               <font>
+                  <Font size="11.0" />
+               </font></Label>
+            <Label fx:id="invalidowneraddress" layoutX="227.0" layoutY="428.0" text="Error : Invalid Address." textFill="RED" visible="false">
+               <font>
+                  <Font size="11.0" />
+               </font></Label>
+            <Label layoutX="38.0" layoutY="176.0" text="Owner Name :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="invalidownername" layoutX="227.0" layoutY="199.0" text="Error : Invalid Name." textFill="RED" visible="false">
+               <font>
+                  <Font size="11.0" />
+               </font></Label>
+            <Label layoutX="38.0" layoutY="226.0" text="Owner Password :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="invalidownerpassword" layoutX="227.0" layoutY="249.0" text="Error : Invalid Password. (8-20 characters)" textFill="RED" visible="false">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="addsuccess" layoutX="157.0" layoutY="500.0" text="Successfully Added New Owner!" visible="false">
+               <font>
+                  <Font name="System Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="126.0" text="Owner ID :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="invalidownerid" layoutX="226.0" layoutY="149.0" text="Error : Invalid ID." textFill="RED" visible="false">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="iddatabase" layoutX="227.0" layoutY="149.0" text="Error : ID already exits in database." textFill="RED" visible="false">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="bnamedatabase" layoutX="227.0" layoutY="99.0" text="Error : Business name already exits in database." textFill="RED" visible="false">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

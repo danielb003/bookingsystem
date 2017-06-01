@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPackage.Owner.AddEmployeeController">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="193.0" layoutY="43.0" text="New Employee ID :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="170.0" layoutY="111.0" text="New Employee Name :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="156.0" layoutY="250.0" text="New Employee Address :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="109.0" layoutY="182.0" text="New Employee Mobile Number :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField id="EMPIDinput" fx:id="EMPIDinput" layoutX="334.0" layoutY="43.0" prefHeight="25.0" prefWidth="256.0" />
+            <TextField id="EMPNAMEinput" fx:id="EMPNAMEinput" layoutX="334.0" layoutY="112.0" prefHeight="25.0" prefWidth="256.0" />
+            <TextField id="EMPMOBNOinput" fx:id="EMPMOBNOinput" layoutX="334.0" layoutY="180.0" prefHeight="25.0" prefWidth="256.0" />
+             <TextField id="EMPADDRSinput" fx:id="EMPADDRSinput" layoutX="334.0" layoutY="248.0" prefHeight="25.0" prefWidth="256.0" />
+            <Button fx:id="confirm" layoutX="306.0" layoutY="376.0" mnemonicParsing="false" onAction="#onConfirmaton" style="-fx-background-color: #58D68D;" text="Confirm">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Separator layoutX="39.0" layoutY="345.0" prefHeight="2.0" prefWidth="622.0" />
+            <Label fx:id="invalidID" layoutX="336.0" layoutY="68.0" style="-fx-text-fill: red;" text="Error : Invalid ID. (3 digits)" visible="false" />
+            <Label fx:id="invalidName" layoutX="336.0" layoutY="137.0" style="-fx-text-fill: red;" text="Error : Invalid Name." visible="false" />
+            <Label fx:id="invalidMobNo" layoutX="336.0" layoutY="205.0" style="-fx-text-fill: red;" text="Error : Invalid Mobile Number. (10 digits)" visible="false" />
+            <Label fx:id="invalidAddress" layoutX="336.0" layoutY="273.0" style="-fx-text-fill: red;" text="Error : Invalid Address." visible="false" />
+            <Label fx:id="Success" layoutX="194.0" layoutY="467.0" text="Successfully Added New Employee!" visible="false">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="iddatabase" layoutX="336.0" layoutY="68.0" text="Error : Employee ID already exists." textFill="RED" visible="false"/>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
