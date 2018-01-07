@@ -7,3 +7,14 @@ Sam Cullin - s3604433 <br/>
 A Homy Ash - Tuesday 4:30pm to 6:30pm
 <br/>
 Please find all our documentation at https://drive.google.com/open?id=0B_ejTos6Q5NIYkw2LVk3dEp4Smc
+
+Software Login Usernames <br/>
+Customer <br/>
+Login - c001 <br/>
+Password - abcd1234 <br/>
+<br/>
+Owner <br/>
+Login - o001 <br/>
+Password - ownerpass <br/>
+<br/>
+There are only 2 types of users
